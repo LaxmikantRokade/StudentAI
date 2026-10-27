@@ -1,0 +1,60 @@
+{
+    "best_model_name": "Random Forest Regressor",
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_samples": 316,
+    "test_samples": 79,
+    "metrics": {
+        "Baseline (Dummy Mean)": {
+            "MAE": 3.6459,
+            "RMSE": 4.5502,
+            "R2": -0.0097
+        },
+        "Linear Regression": {
+            "MAE": 1.6467,
+            "RMSE": 2.3784,
+            "R2": 0.7241
+        },
+        "Ridge Regression": {
+            "MAE": 1.6391,
+            "RMSE": 2.3715,
+            "R2": 0.7257
+        },
+        "Random Forest Regressor": {
+            "MAE": 1.1858,
+            "RMSE": 1.9706,
+            "R2": 0.8106
+        },
+        "Gradient Boosting Regressor": {
+            "MAE": 1.1504,
+            "RMSE": 1.9819,
+            "R2": 0.8084
+        }
+    },
+    "cross_validation": {
+        "Random Forest Regressor": {
+            "CV_R2_mean": 0.8657,
+            "CV_R2_std": 0.0561,
+            "CV_RMSE_mean": 1.6247,
+            "CV_RMSE_std": 0.3303
+        },
+        "Gradient Boosting Regressor": {
+            "CV_R2_mean": 0.8649,
+            "CV_R2_std": 0.0525,
+            "CV_RMSE_mean": 1.6354,
+            "CV_RMSE_std": 0.3062
+        }
+    },
+    "behavioral_model": {
+        "model_name": "Random Forest Regressor (Behavioral Only)",
+        "features_excluded": [
+            "G1",
+            "G2"
+        ],
+        "input_features_count": 30,
+        "MAE": 3.1233,
+        "RMSE": 3.9016,
+        "R2": 0.2576,
+        "description": "Early-semester predictive model using only behavioral, demographic, attendance, and lifestyle indicators prior to any grading period."
+    }
+}

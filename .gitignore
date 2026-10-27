@@ -1,0 +1,39 @@
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+.venv/
+
+# macOS system files
+.DS_Store
+
+# Pytest cache
+.pytest_cache/
+
+# Model artifacts (re-trainable from data)
+# Uncomment the next line if you want to exclude pkl from git:
+# models/*.pkl
+
+# Application log (auto-generated at runtime)
+outputs/logs/
+
+# Exported figures (auto-generated at runtime)
+outputs/figures/*.png
+outputs/figures/*.pdf
+
+# Streamlit credentials and secrets
+.streamlit/credentials.toml
+.streamlit/secrets.toml
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Python cache in any folder
+__pycache__/
+*.py[cod]
+.pytest_cache/
